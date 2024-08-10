@@ -33,7 +33,7 @@ function Downloader() {
     } else {
       const apiUrl = window.location.href.includes("localhost")
         ? "http://localhost:8000/download/youtube/"
-        : "https://catch-my-stream-e16908e1c32a.herokuapp.com/download/youtube/";
+        : "https://catch-my-stream-e16908e1c32a.herokuapp.com/download/youtube";
       axios
         .post(apiUrl, { url }, { responseType: "blob" })
         .then((response) => {
