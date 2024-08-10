@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .custom-scrollbar {
+    /* For Webkit browsers like Chrome, Safari */
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #1e293b; /* slate-800 */
+      border-radius: 15px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #475569; /* slate-600 */
+      border-radius: 15px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: #64748b; /* slate-500 */
+    }
+  }
+}
